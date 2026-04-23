@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - Tangoo</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+      color: #1a1a1a;
+      line-height: 1.8;
+      background: #F6F3EC;
+    }
+    h1 { font-size: 26px; font-weight: 700; margin-bottom: 4px; }
+    .meta { color: #999; font-size: 13px; margin-bottom: 36px; }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 32px;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+    p { font-size: 15px; color: #444; margin: 0 0 12px; white-space: pre-wrap; }
+    a { color: #1F5F3A; }
+    nav { margin-bottom: 24px; }
+    nav a { font-size: 13px; color: #666; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav><a href="./index.html">← Tangoo Legal</a></nav>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026 年 4 月 23 日</p>
+  <h2>1. 運営者が取得する情報</h2>
+  <p>本アプリは、利用者のプライバシーを最優先に設計されています。v1.0 では下記の最小限の情報のみを取扱います。
+【オンデバイスで保存される情報】
+・ニックネーム、学習目標、学年、1 日の学習目標
+・学習進捗（正答率、復習スケジュール、連続日数等）
+・通知時刻の設定
+これらの情報は利用者の端末内（AsyncStorage / MMKV / SQLite）にのみ保存され、運営者サーバーには一切送信されません。</p>
+  <h2>2. 第三者サービスへの情報送信</h2>
+  <p>本アプリは、サービス品質維持のため以下の第三者サービスを使用します。送信される情報は App Store の「App のプライバシー」表示と一致しています。
+【RevenueCat（決済代行）】
+送信される情報: 購入履歴（Purchase History）
+Premium 購入時に、Apple → RevenueCat 経由で購入トランザクション情報が運営者に通知されます。氏名・住所・クレジットカード情報は運営者・RevenueCat
+ともに取得しません。利用者個人を特定する情報とは紐付けられません。
+【PostHog（利用統計、EU リージョン）】
+送信される情報: デバイス ID（Device ID、匿名 UUID）/ 製品とのインタラクション（Product Interaction）
+アプリ内で生成された匿名のデバイス UUID と、画面遷移・学習開始・テスト完了・購入完了等の操作イベントを収集します。氏名・連絡先等の個人を特定する情報は送信
+されず、IDFA（広告識別子）も取得しません。利用者を横断的に追跡（Tracking）する目的では使用しません。
+【Sentry（クラッシュレポート）】
+送信される情報: クラッシュデータ（Crash Data）/ パフォーマンスデータ（Performance Data）
+アプリのクラッシュ発生時にスタックトレースとデバイス機種・OS バージョンが、また起動時間や画面遷移時間等のパフォーマンス指標が Sentry
+に送信されます。学習データ・ニックネーム・個人を特定する情報は含まれません。</p>
+  <h2>3. v1.1 以降の OCR / カメラ機能について</h2>
+  <p>v1.1 で導入予定の教科書スキャン機能では、撮影した画像は Apple Vision Framework
+を使用して利用者の端末内のみで処理されます。画像データが運営者サーバーや第三者に送信されることは一切ありません。</p>
+  <h2>4. 13 歳未満の方について</h2>
+  <p>本アプリは 13 歳以上の方を対象としています。13 歳未満の方の利用は禁止しており、運営者は意図的に 13
+歳未満の方から個人情報を収集することはありません。万が一 13 歳未満の方から情報を取得していたことが判明した場合、速やかに削除いたします。</p>
+  <h2>5. 情報の保存期間</h2>
+  <p>端末内に保存された学習データは、利用者がアプリをアンインストールするか「マイページ &gt; データを削除」を実行するまで保持されます。
+PostHog / Sentry に送信されるイベントログは各サービスの保存ポリシー（PostHog: 1 年、Sentry: 90 日）に従って自動削除されます。</p>
+  <h2>6. 利用者の権利</h2>
+  <p>利用者は、いつでも以下の操作を行うことができます。
+・「マイページ &gt; データを削除」で全学習データの削除
+・iOS 「設定 &gt; Tangoo」 で通知の停止
+・iOS 「設定 &gt; Apple ID &gt; サブスクリプション」 で Premium の解約
+・<a href="mailto:privacy@tangoo.app">privacy@tangoo.app</a> への連絡で運営者が保有する情報の開示・訂正・削除請求</p>
+  <h2>7. ポリシーの変更</h2>
+  <p>運営者は、必要に応じて本プライバシーポリシーを変更することができます。重要な変更がある場合、本アプリ内通知またはアップデート時のリリースノートにてお
+知らせします。</p>
+  <h2>8. お問い合わせ</h2>
+  <p>本プライバシーポリシーに関するお問い合わせは、下記までご連絡ください。
+Tangoo 運営
+Email: <a href="mailto:privacy@tangoo.app">privacy@tangoo.app</a></p>
+</body>
+</html>
